@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:ital,wght@0,300..800;1,300..800&family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --color-brand-primary: #bc000a;
+  --color-brand-secondary: #00696e;
+  --color-brand-equity: #EB2A23;
+  --color-brand-yellow: #F8F3DB;
+  --color-brand-black: #1F1C06;
+  --color-brand-surface: #fafaf5;
+  --color-brand-cyan: #9bedf2;
+}
+
+@layer utilities {
+  .rotated-label {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-slow {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee 50s linear infinite reverse;
+}
+

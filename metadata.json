@@ -1,0 +1,6 @@
+{
+  "name": "Stanford d.school Everything",
+  "description": "An interactive, curated design thinking catalog for Stanford d.school containing classes, methods, workshops, and books, complete with a curiosity generator powered by Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
